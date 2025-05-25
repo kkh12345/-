@@ -261,20 +261,20 @@
                   alt="서울시장 오세훈입니다."
                 />
               </a>
-              <a href="#" class="ad-banner2__wish-btn">
+              <a href="#">
                 <img src="./imgs/btn-mayorlink0.png" alt="시장에게 바란다" />
               </a>
               <div class="ad-banner-links">
-                <a href="#" aria-label="공약(메니페스토)"
+                <a href="#"
                   ><img src="./imgs/btn-mayorlink1.png" alt="공약(메니페스토)"
                 /></a>
-                <a href="#" aria-label="정책제안"
+                <a href="#"
                   ><img src="./imgs/btn-mayorlink2.png" alt="정책제안"
                 /></a>
-                <a href="#" aria-label="투표"
+                <a href="#"
                   ><img src="./imgs/btn-mayorlink3.png" alt="투표"
                 /></a>
-                <a href="#" aria-label="설문조사"
+                <a href="#"
                   ><img src="./imgs/btn-mayorlink4.png" alt="설문조사"
                 /></a>
               </div>
@@ -301,7 +301,8 @@
             <h2 class="common-title">주요 서비스</h2>
             <a href="#" class="key-service__view-all-btn">전체누리집</a>
           </div>
-          <ul class="key-service__list" aria-label="주요 서비스 목록">
+          <h3 class="sr-hidden">주요 서비스 목록</h3>
+          <ul class="key-service__list">
             <li class="key-service__item"><a href="#">공공서비스예약</a></li>
             <li class="key-service__item"><a href="#">응답소(민원신고)</a></li>
             <li class="key-service__item"><a href="#">서울일자리</a></li>
@@ -372,7 +373,8 @@
                 aria-label="참여 신청 더보기"
               ></a>
             </h3>
-            <ul class="board__article-list" aria-label="참여 신청 게시글 목록">
+            <h4 class="sr-hidden">게시글 목록</h4>
+            <ul class="board__article-list">
               <li class="board__article-item">
                 <span class="board__article-cate culture">문화</span>
                 <a href="#" class="board__article-title">
@@ -412,13 +414,11 @@
               행사 및 축제<a
                 class="view-more-article-btn"
                 href="#"
-                aria-label="행사 및 축제 더보기"
+                aria-label="게시글더보기"
               ></a>
             </h3>
-            <ul
-              class="board__article-list"
-              aria-label="행사 및 축제 게시글 목록"
-            >
+            <h4 class="sr-hidden">게시글 목록</h4>
+            <ul class="board__article-list">
               <li class="board__article-item">
                 <span class="board__article-cate culture">문화</span>
                 <a href="#" class="board__article-title">
@@ -454,10 +454,8 @@
           <!-- 자주 찾은 서비스 -->
           <section class="board__popular-services">
             <h3 class="common-title">자주 찾은 서비스</h3>
-            <ul
-              class="board__service-link-list"
-              aria-label="자주 찾은 서비스 링크 목록"
-            >
+            <h4 class="sr-hidden">서비스 목록</h4>
+            <ul class="board__service-link-list">
               <li class="board__service-link-item">
                 <a href="#">몽땅정보만능키</a>
               </li>
@@ -494,7 +492,8 @@
         <!-- === 분야별 정보 === -->
         <section class="info-by-cate common-inner">
           <h2>분야별정보</h2>
-          <ul class="info-by-cate__list" aria-label="분야 링크 리스트">
+          <h3 class="sr-hidden">분야 목록</h3>
+          <ul class="info-by-cate__list">
             <li class="info-by-cate__item">
               <a href="#">
                 <img
@@ -727,10 +726,8 @@
           <!-- 서울소식 -->
           <section class="seoul-content__board">
             <h3 class="common-title">서울소식</h3>
-            <ul
-              class="seoul-content__article-list"
-              aria-label="서울소식 게시글 목록"
-            >
+            <h4 class="sr-hidden">서울소식 게시글 목록</h4>
+            <ul class="seoul-content__article-list">
               <li class="seoul-content__article-item">
                 <a href="#"
                   ><span class="seoul-content__article-cate">고시공고</span>
@@ -789,14 +786,27 @@
               <span>서울시 소통창구를 한눈에!</span>
               <a href="#" class="sns__view-all-btn">전체보기</a>
             </div>
-            <ul class="sns__icon-list" aria-label="sns 바로가기 아이콘 목록">
-              <li class="sns__icon-item"><a href="#"></a></li>
-              <li class="sns__icon-item"><a href="#"></a></li>
-              <li class="sns__icon-item"><a href="#"></a></li>
-              <li class="sns__icon-item"><a href="#"></a></li>
-              <li class="sns__icon-item"><a href="#"></a></li>
-              <li class="sns__icon-item"><a href="#"></a></li>
-              <li class="sns__icon-item"><a href="#"></a></li>
+            <h3 class="sr-hidden">바로가기 목록</h3>
+            <ul class="sns__icon-list">
+              <li class="sns__icon-item">
+                <a href="#" aria-label="페이스북"></a>
+              </li>
+              <li class="sns__icon-item">
+                <a href="#" aria-label="인스타그램"></a>
+              </li>
+              <li class="sns__icon-item">
+                <a href="#" aria-label="유튜브"></a>
+              </li>
+              <li class="sns__icon-item"><a href="#" aria-label="X"></a></li>
+              <li class="sns__icon-item">
+                <a href="#" aria-label="네이버 블로그"></a>
+              </li>
+              <li class="sns__icon-item">
+                <a href="#" aria-label="카카오스토리"></a>
+              </li>
+              <li class="sns__icon-item">
+                <a href="#" aria-label="카카오톡"></a>
+              </li>
             </ul>
           </div>
         </section>
@@ -934,7 +944,7 @@
             </p>
           </div>
 
-          <a class="footer__mark" href="#" aria-label="웹접근성 인증"
+          <a class="footer__mark" href="#"
             ><img
               src="./imgs/footer_mark_wah_2025.png"
               alt="웹접근성 인증 마크"
